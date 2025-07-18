@@ -1,0 +1,157 @@
+main {
+  padding: 2rem;
+}
+
+.hero {
+  background: #20c997;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.tags {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(12, 224, 224, 0.03);
+}
+
+.tag-list {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  border-radius: 20px;
+}
+
+.feed .card {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.author .name {
+  color: #20c997;
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  background: #20c997;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.article-detail {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.article-detail .meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #63c9f1;
+}
+
+.article-detail .tag-list {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* === Responsive Layout === */
+@media (max-width: 1024px) {
+  .header nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .tags {
+    padding: 1rem;
+  }
+
+  .tag-list {
+    justify-content: center;
+  }
+
+  .feed .card {
+    padding: 1rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .pagination button {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .card-header .likes {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+}
