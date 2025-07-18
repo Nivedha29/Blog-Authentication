@@ -1,13 +1,45 @@
-# React + Vite
+# Blog Authentication App
+This project is a simple blog application with full user authentication functionality, built using React and connected to the RealWorld API. It supports registration, login, profile editing, and JWT-based authentication. Once logged in, users can view, create, edit, and delete blog posts.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app follows the RealWorld example app specification and uses modern React practices, including:
 
-Currently, two official plugins are available:
+React Router v6 for routing
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React Hook Form for form validation
 
-## Expanding the ESLint configuration
+Axios for API requests
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Blog-Authentication
+Markdown support for articles
+
+Token persistence using localStorage
+
+ # Dependencies
+
+React 18+
+
+React Router DOM
+
+React Hook Form
+
+Axios
+
+Marked (for rendering Markdown)
+
+React Markdown / DOMPurify (optional for safe rendering)
+
+# Features
+
+ User registration, login, logout
+ 
+ Persistent authentication using localStorage
+ 
+ User profile editing
+ 
+ Article feed with pagination
+ 
+ Article detail view with markdown rendering
+ 
+ Responsive layout (mobile/tablet friendly)
+ 
+ Clean UI matching the RealWorld Blog design
+ 
